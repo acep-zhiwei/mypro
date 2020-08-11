@@ -12,14 +12,14 @@ CREATE TABLE `blog` (
   PRIMARY KEY (`id`),
   KEY `user_id_idx` (`user_id`),
   CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf;
 
 --
 -- Dumping data for table `blog`
 --
 
 LOCK TABLES `blog` WRITE;
-INSERT INTO `blog` VALUES (1,'SpringMVCコース','これはSpringMVCコースです',2,'2015-03-18');
+INSERT INTO `blog` VALUES (1,'SpringMvC','This is SpringMVC',2,'2015-03-18');
 
 UNLOCK TABLES;
 
@@ -35,7 +35,7 @@ CREATE TABLE `user` (
   `first_name` varchar(45) DEFAULT NULL,
   `last_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 LOCK TABLES `user` WRITE;
 
