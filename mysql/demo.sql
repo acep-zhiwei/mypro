@@ -2,7 +2,7 @@
 #データベース作成
 mysql> create database test;
 #データベースを使用     
-mysql> use abc; 
+mysql> use test; 
 #文字コード設定                
 mysql> set names utf8;        
 
